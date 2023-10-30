@@ -1,5 +1,7 @@
 pipeline {
-  agent {kubernetes}
+  agent {
+    kubernetes { label 'jenkins' }
+  }
   
   stages {
     stage('Test') {
