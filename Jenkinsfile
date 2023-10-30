@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    kubernetes { label 'jenkins' }
+    kubernetes { label 'kubernetes-cloud' }
   }
   
   stages {
